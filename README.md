@@ -1,1 +1,3 @@
-# android-tv-weather-viewer-193180
+# Project Repository
+
+This is the initial README file for the project.
