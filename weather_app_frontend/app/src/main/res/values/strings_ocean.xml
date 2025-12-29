@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="home_title">Weather</string>
+    <string name="choose_location">Choose Location</string>
+    <string name="current_conditions">Current</string>
+    <string name="next_days">Next Days</string>
+    <string name="feels_like">Feels like %1$d°</string>
+    <string name="wind">Wind %1$d km/h</string>
+    <string name="humidity">Humidity %1$d%%</string>
+    <string name="error_generic">Something went wrong</string>
+    <string name="empty_no_location">No location selected</string>
+    <string name="action_retry">Retry</string>
+    <string name="action_change_location">Change Location</string>
+    <string name="search_location_hint">Search city</string>
+</resources>

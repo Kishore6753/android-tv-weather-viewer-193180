@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/locationDialogRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/bg_card">
+
+    <TextView
+        android:id="@+id/tvDialogTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_location"
+        android:textSize="@dimen/text_heading"
+        android:textColor="@color/ocean_text"/>
+
+    <EditText
+        android:id="@+id/etSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/search_location_hint"
+        android:textColor="@color/ocean_text"
+        android:textColorHint="@color/ocean_text_muted"
+        android:background="@drawable/bg_card"
+        android:layout_marginTop="@dimen/space_md"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:singleLine="true"/>
+
+    <LinearLayout
+        android:id="@+id/locationsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/space_md">
+
+        <TextView
+            android:id="@+id/loc1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="San Francisco, US"
+            android:padding="@dimen/space_md"
+            android:background="@drawable/bg_card_selector"
+            android:textColor="@color/ocean_text"
+            android:focusable="true"
+            android:focusableInTouchMode="true" />
+
+        <TextView
+            android:id="@+id/loc2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New York, US"
+            android:padding="@dimen/space_md"
+            android:background="@drawable/bg_card_selector"
+            android:textColor="@color/ocean_text"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginTop="@dimen/space_sm"/>
+
+        <TextView
+            android:id="@+id/loc3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="London, UK"
+            android:padding="@dimen/space_md"
+            android:background="@drawable/bg_card_selector"
+            android:textColor="@color/ocean_text"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginTop="@dimen/space_sm"/>
+    </LinearLayout>
+</LinearLayout>

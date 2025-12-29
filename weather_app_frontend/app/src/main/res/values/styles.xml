@@ -2,8 +2,14 @@
 <resources>
     <!-- Base application theme for Android TV -->
     <style name="AppTheme" parent="Theme.Leanback">
-        <!-- Customize your theme here -->
-        <item name="android:windowBackground">@color/tv_background</item>
-        <item name="android:colorPrimary">@color/tv_accent</item>
+        <!-- Ocean Professional Theme -->
+        <item name="android:windowBackground">@color/ocean_background</item>
+        <item name="android:colorPrimary">@color/ocean_primary</item>
+        <item name="android:colorAccent">@color/ocean_secondary</item>
+        <item name="android:textColorPrimary">@color/ocean_text</item>
+        <item name="android:textColorSecondary">@color/ocean_text_muted</item>
     </style>
+
+    <!-- Remove custom Widget.* parents to avoid unresolved style references -->
+    <!-- Keep only concrete styles if needed in future, currently layouts set attributes directly -->
 </resources>
