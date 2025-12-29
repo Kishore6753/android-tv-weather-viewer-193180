@@ -8,6 +8,7 @@ import com.example.weather_app_frontend.ui.HomeActivity
 /**
  * Launcher Activity for Android TV.
  * Routes immediately to HomeActivity which renders the weather UI.
+ * Keeps LEANBACK_LAUNCHER role while HomeActivity remains the UI host.
  */
 class MainActivity : FragmentActivity() {
 

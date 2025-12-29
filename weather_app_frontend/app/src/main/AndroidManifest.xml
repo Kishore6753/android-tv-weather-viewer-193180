@@ -34,8 +34,14 @@
 
         <activity
             android:name=".ui.HomeActivity"
-            android:exported="false"
-            android:screenOrientation="landscape" />
+            android:exported="true"
+            android:screenOrientation="landscape">
+            <!-- Allow tooling/preview or explicit intents to resolve HomeActivity without making it the TV launcher -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
