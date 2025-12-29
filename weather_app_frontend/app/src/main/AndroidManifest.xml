@@ -24,21 +24,23 @@
 
         <activity
             android:name=".MainActivity"
-            android:exported="true"
-            android:screenOrientation="landscape">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="false"
+            android:screenOrientation="landscape" />
 
         <activity
             android:name=".ui.HomeActivity"
             android:exported="true"
             android:screenOrientation="landscape">
-            <!-- Allow tooling/preview or explicit intents to resolve HomeActivity without making it the TV launcher -->
+            <!--
+              Preview/launcher stability:
+              - Some preview runners launch with CATEGORY_LAUNCHER (not LEANBACK_LAUNCHER).
+              - Android TV uses CATEGORY_LEANBACK_LAUNCHER.
+              Declare both so the same Home UI renders reliably in preview and on TV.
+            -->
             <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
